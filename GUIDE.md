@@ -8,7 +8,7 @@
    forge install aboutcircles/circles-contracts-v
    cd lib/circles-contracts-v2
    git fetch
-   git checkout 20240614-integration-groups
+   git checkout 20240614-integration-group
    cd ../..
    git add -A & git commit
    ```
