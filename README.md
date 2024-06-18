@@ -9,7 +9,7 @@ Circles has USD 1400 for two, open-ended bounty tracks for EthKyiv:
 1. **Integration track of Circles**: awarded to the best idea of integrating Circles with any existing DeFi, Social apps or protocols,
    SocialFi, ZK protocols, wallets, web2 apps, ... but make sure it is value-aligned ;-)
 
-2. **Governing the Commons with Circles track**: awarded to the best implementation of Group Circles to "govern a common".
+2. **Governing the Commons with Circles track**: awarded to the best implementation of Group Circles to "govern a common". (see below for details)
 
 Either track requires to use either:
   - Circles v1 on Gnosis Chain mainnet
@@ -21,6 +21,10 @@ Either track requires to use either:
 
 We aim to divide bounty equal over the two tracks, but we reserve the right to make a final
 decision on how to distribute the total bounty after judging all submissions.
+
+**To hack on ideas for "Governing the Commons with Circles" we recommend to focus on the crux of your idea during
+the hackathon and treat Circles as a black box. For example, simply start by mocking Circles from a set of [ERC20 contracts, or an ERC1155 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token)
+to represent the Group Circles of different communities.**
 
 ## Overview
 

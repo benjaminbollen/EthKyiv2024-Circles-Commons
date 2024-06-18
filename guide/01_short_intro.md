@@ -39,3 +39,9 @@ In effect, the local Circles become path-fungible, meaning that if a path betwee
 while preserving that all Circles remain local to where they were issued. This brings us "full circle": Circles as a protocol
 is agnosistic whether accounts are sybil or not, because every authentic human who only trusts other authentic accounts is shielded
 from the behaviour of other sybil accounts (outside of their local Circle), while still having a global reach to spend over the whole graph.
+
+## Circles v2 presentation on soft-sybil resistance and AI bots 
+
+Circles v2 presentation on soft-sybil resistance and AI bots, december 2023
+
+[![Circles v2 December 2023](https://img.youtube.com/vi/E8UvocIZ-6s/0.jpg)](https://www.youtube.com/watch?v=E8UvocIZ-6s)
