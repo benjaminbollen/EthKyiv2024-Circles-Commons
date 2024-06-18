@@ -22,8 +22,6 @@ Circles v2 is more developer friendly (we hope):
 **To hack on ideas for "Governing the Commons" we recommend to focus on the crux of your idea during the hackathon
 and treat Circles as a black box. Simply start by mocking Circles from a set of [ERC20 contracts, or an ERC1155 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token) to represent the Group Circles of different communities.**
 
-
-
 Circles v2 contracts:
 - Contract code is at [github.com/aboutcircles/circles-contracts-v2](https://github.com/aboutcircles/circles-contracts-v2/tree/v0.3.4-alpha)
 - Hub is ERC1155 [0x2066CDA98F98397185483aaB26A89445addD6740](https://gnosis-chiado.blockscout.com/address/0x2066CDA98F98397185483aaB26A89445addD6740?tab=read_contract)

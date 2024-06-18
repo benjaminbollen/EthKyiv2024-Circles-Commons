@@ -42,6 +42,6 @@ from the behaviour of other sybil accounts (outside of their local Circle), whil
 
 ## Circles v2 presentation on soft-sybil resistance and AI bots 
 
-Circles v2 presentation on soft-sybil resistance and AI bots, december 2023
+Alternatively, you can watch an early presentation about Circles v2 on soft-sybil resistance and AI bots, december 2023.
 
 [![Circles v2 December 2023](https://img.youtube.com/vi/E8UvocIZ-6s/0.jpg)](https://www.youtube.com/watch?v=E8UvocIZ-6s)
