@@ -19,6 +19,9 @@ Either track requires to use either:
       (ie. mocked version of collateralizing their Circles under the same condition)
     - mock and implementation cannot violate core principles of Circles (eg. different issuence)
 
+We aim to divide bounty equal over the two tracks, but we reserve the right to make a final
+decision on how to distribute the total bounty after judging all submissions.
+
 ## A less-short Introduction to Circles
 
 Circles is a social money. At its most basic it is a simple idea: every human should always have
