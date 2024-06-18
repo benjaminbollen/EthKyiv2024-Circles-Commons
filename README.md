@@ -17,7 +17,7 @@ Either track requires to use either:
   - or mocked Group Circles (ERC20, or ERC1155): the essense must be that 
     - community currencies have a relevant condition with which people can mint it
       (ie. mocked version of collateralizing their Circles under the same condition)
-    - mock and implementation cannot violate core principles of Circles (eg. different issuence)
+    - mock and implementation must be compatible with core principles of Circles (eg. cannot requiring a different issuance)
 
 We aim to divide bounty equal over the two tracks, but we reserve the right to make a final
 decision on how to distribute the total bounty after judging all submissions.
