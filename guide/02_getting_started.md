@@ -65,9 +65,16 @@ query any of the other events, effectively the methods of interest might be:
     circles_getTokenBalance (v1 on testnet)
     circlesV2_getTokenBalances
     circles_query
-    circles_events
+    circles_events (* only for v1 mainnet)
     eth_subscribe("circles")
 ```
+
+Note: for mainnet v1 the indexer of Circles events can be accessed at
+
+    https://rpc.falkenstein.aboutcircles.com/
+    https://rpc.helsinki.aboutcircles.com/
+
+and SDK v0.0.44 is a stable alpha release.
 
 ### Circles SDK (early preview)
 
@@ -76,15 +83,22 @@ to get started with interacting with Circles v2:
 
 https://www.npmjs.com/package/@circles-sdk/sdk (v0.0.45-preview-4 covers Circles v2; use v0.0.44 if you're using Circles v1 on mainnet)
 
-An `avatar` is the main interaction point, it's effectively the address representing your user (when using metamask) and it's registered in the Circles social graph and as such forms a vertex in the graph.
+An `avatar` is the main interaction point (it's effectively the address representing your user when using metamask) and it's registered in the Circles social graph and as such forms a vertex in the graph, and can forn trust edges with other avatars.
 
-The SDK only covers avatars as humans for now (so not as organizations or groups)
+The SDK only covers avatars as humans for now (not yet organizations or groups)
 
 - The main avatar interactions are all defined here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/avatar.ts
 - All v1 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v1/v1Person.ts
 - All v2 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v2/v2Person.ts
 
 # Circles v1 (mainnet)
+
+For mainnet v1 the indexer of Circles events can be accessed at
+
+    https://rpc.falkenstein.aboutcircles.com/
+    https://rpc.helsinki.aboutcircles.com/
+
+and SDK v0.0.44 is a stable alpha release. (see above for more links).
 
 Once Circles v2 launches, you will be able to migrate your Circles v1 balance to v2.
 
