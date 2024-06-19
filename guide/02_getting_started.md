@@ -28,6 +28,8 @@ Circles v2 contracts:
 - ERC20Lift is a factory to create ERC20 contracts for any of the ERC1155 (personal or group) Circles
     - important if you need/want an ERC20 interface to develop against
     - [0x84319f1168Cc2383b8b366d4ab7E20baBda03687](https://gnosis-chiado.blockscout.com/address/0x84319f1168Cc2383b8b366d4ab7E20baBda03687?tab=read_contract)
+- Circles v2 is backwards compatible with Circles v1, so on testnet Circles v1 Hub contract is at [0xdbf22d4e8962db3b2f1d9ff55be728a887e47710](https://gnosis-chiado.blockscout.com/address/0xdbf22d4e8962db3b2f1d9ff55be728a887e47710?tab=read_contract)
+- optionally Nameregistry is at [0x64703664BBc8A3BaeD014171e86Dfc2dF2E07A08](https://gnosis-chiado.blockscout.com/address/0x64703664BBc8A3BaeD014171e86Dfc2dF2E07A08?tab=read_contract)
 - full list of contract addresses, see [release v0.3.4-alpha](https://github.com/aboutcircles/circles-contracts-v2/releases/tag/v0.3.4-alpha)
 - the generated *reference* code documentation is hosted at https://dev.zirkles.org; there is no overview documentation yet :-/
 
