@@ -30,4 +30,4 @@ to represent the Group Circles of different communities.**
 
 - [A less-short introduction to Circles](/guide/01_short_intro.md)
 - [Getting Started](/guide/02_getting_started.md)
-- [Using Circles for Quadratic Voting/Funding](/guide/03_commons)
+- [Using Circles for Quadratic Voting/Funding](/guide/03_commons.md)
