@@ -106,6 +106,7 @@ If you choose to build against Circles v1 then you can use
 - [circles SDK NPM v0.0.44](https://www.npmjs.com/package/@circles-sdk/sdk/v/0.0.44) for Circles v1
 - [Dappcon 2024 wallet workshop](https://github.com/aboutcircles/circles-code-quest)
 - for reference [circles-sdk github](https://github.com/aboutcircles/circles-sdk/tree/dev)
+- [Circles v1 SDK documentation](https://docs.aboutcircles.com/developer-docs/getting-started-with-the-sdk)
 
 Runs on Gnosis Chain, since 2020. You can register your personal account with [Circles Garden](https://circles.garden).
 - legacy wallet https://circles.garden (preferred, manages SAFE contract and you can export your keys)
@@ -117,6 +118,7 @@ Runs on Gnosis Chain, since 2020. You can register your personal account with [C
 Contract addresses:
 - Hub Contract [0x29b9a7fbb8995b2423a71cc17cf9810798f6c543](https://gnosisscan.io/address/0x29b9a7fbb8995b2423a71cc17cf9810798f6c543/advanced#readContract)
 - legacy Circles v1 documentation https://handbook.joincircles.net/docs/developers/
+
 
 # More helpful links
 
