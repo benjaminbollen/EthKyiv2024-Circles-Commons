@@ -1,6 +1,6 @@
 [Return to overview](/README.md)
 
-## Getting Started
+# Getting Started
 
 Circles has already been live in the world for several years. We'll refer to this as Circles v1
 and you can find details for Circles v1 below.
@@ -9,7 +9,7 @@ Since last year, we've been working hard on improvements
 to the core protocol, and the [first testnet contracts](https://github.com/aboutcircles/circles-contracts-v2/releases/tag/v0.3.4-alpha)
 are accessible on [Chiado testnet](https://docs.gnosischain.com/about/networks/chiado), aka Circles v2.
 
-## Circles v2 (for groups and testnet)
+# Circles v2 (for groups and testnet)
 
 For building against Circles v2 we recommend using preferred wallets (eg. Metamask) - we don't need to complicate with smart contract wallets (but welcome if you so desire).
 
@@ -20,11 +20,17 @@ Circles v2 is more developer friendly (we hope):
 - any Circles (of any person or any group) can also be lifted out 
 
 **To hack on ideas for "Governing the Commons" we recommend to focus on the crux of your idea during the hackathon
-and treat Circles as a black box. Simply start by mocking Circles from a set of [ERC20 contracts, or an ERC1155 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token) to represent the Group Circles of different communities.**
+and treat Circles as a black box. Simply start by mocking Circles from a set of [ERC20 contracts, or an ERC1155 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token) to represent the Group Circles of different communities.** If you have time later in your project to integrate it with Circles v2, all the better.
 
-Circles v2 contracts:
+## Building against Circles v2 on testnet
+
+You can directly call contract functions over standard RPCs;
+complementary we have a very early preview of an SDK to help
+manage interactions from the perspective of a user (a human avatar).
+
+### Circles v2 contracts:
 - Contract code is at [github.com/aboutcircles/circles-contracts-v2](https://github.com/aboutcircles/circles-contracts-v2/tree/v0.3.4-alpha)
-- Hub is ERC1155 [0x2066CDA98F98397185483aaB26A89445addD6740](https://gnosis-chiado.blockscout.com/address/0x2066CDA98F98397185483aaB26A89445addD6740?tab=read_contract)
+- Hub is Circles is ERC1155 [0x2066CDA98F98397185483aaB26A89445addD6740](https://gnosis-chiado.blockscout.com/address/0x2066CDA98F98397185483aaB26A89445addD6740?tab=read_contract)
 - ERC20Lift is a factory to create ERC20 contracts for any of the ERC1155 (personal or group) Circles
     - important if you need/want an ERC20 interface to develop against
     - [0x84319f1168Cc2383b8b366d4ab7E20baBda03687](https://gnosis-chiado.blockscout.com/address/0x84319f1168Cc2383b8b366d4ab7E20baBda03687?tab=read_contract)
@@ -33,7 +39,52 @@ Circles v2 contracts:
 - full list of contract addresses, see [release v0.3.4-alpha](https://github.com/aboutcircles/circles-contracts-v2/releases/tag/v0.3.4-alpha)
 - the generated *reference* code documentation is hosted at https://dev.zirkles.org; there is no overview documentation yet :-/
 
-## Circles v1 (mainnet)
+### RPC access to Chiado and Circles contracts
+
+To access Chiado there are several (public) RPC (ethereum) endpoints, for example 
+
+    https://gnosis-chiado-rpc.publicnode.com/.
+
+In principle all functionality is directly accessable from
+standard RPC calls to any Chiado node. However, for example
+to accumulate the balances a person has across the different
+Circles tokens, this would involve complicated polling.
+
+**Therefore we also host an RPC endpoint that, in addition to
+standard Ethereum RPC, also indexes the Circles events of the testnet (contracts v0.3.4) at:**
+
+    https://chiado-rpc.aboutcircles.com/
+
+You can find the documentation for the RPC in [Circles-Nethermind-Plugin](https://github.com/CirclesUBI/circles-nethermind-plugin?tab=readme-ov-file#circles-rpc-methods)
+In essence you might want to look at this is you want to know
+the total balances of a user across the graph, but you can also
+query any of the other events, effectively the methods of interest might be:
+```
+    circles_getTotalBalance (v1 on testnet)
+    circlesV2_getTotalBalance
+    circles_getTokenBalance (v1 on testnet)
+    circlesV2_getTokenBalances
+    circles_query
+    circles_events
+    eth_subscribe("circles")
+```
+
+### Circles SDK (early preview)
+
+For contracts on Circles v2, there is an early preview SDK release which you can use
+to get started with interacting with Circles v2:
+
+https://www.npmjs.com/package/@circles-sdk/sdk (v0.0.45-preview-4 covers Circles v2; use v0.0.44 if you're using Circles v1 on mainnet)
+
+An `avatar` is the main interaction point, it's effectively the address representing your user (when using metamask) and it's registered in the Circles social graph and as such forms a vertex in the graph.
+
+The SDK only covers avatars as humans for now (so not as organizations or groups)
+
+- The main avatar interactions are all defined here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/avatar.ts
+- All v1 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v1/v1Person.ts
+- All v2 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v2/v2Person.ts
+
+# Circles v1 (mainnet)
 
 Once Circles v2 launches, you will be able to migrate your Circles v1 balance to v2.
 
@@ -53,7 +104,7 @@ Contract addresses:
 - Hub Contract [0x29b9a7fbb8995b2423a71cc17cf9810798f6c543](https://gnosisscan.io/address/0x29b9a7fbb8995b2423a71cc17cf9810798f6c543/advanced#readContract)
 - legacy Circles v1 documentation https://handbook.joincircles.net/docs/developers/
 
-## More helpful links
+# More helpful links
 
 - Add Chaido chain to Metamask https://chaidochain.net
 - Chaido faucet https://faucet.chiadochain.net/

@@ -1,6 +1,6 @@
 [Return to overview](/README.md)
 
-## A less-short Introduction to Circles
+# A less-short Introduction to Circles
 
 Circles is a social money.
 
@@ -40,7 +40,7 @@ while preserving that all Circles remain local to where they were issued. This b
 is agnosistic whether accounts are sybil or not, because every authentic human who only trusts other authentic accounts is shielded
 from the behaviour of other sybil accounts (outside of their local Circle), while still having a global reach to spend over the whole graph.
 
-## Circles v2 presentation on soft-sybil resistance and AI bots 
+# Circles v2 presentation on soft-sybil resistance and AI bots 
 
 Alternatively, you can watch an early presentation about Circles v2 on soft-sybil resistance and AI bots, december 2023.
 
