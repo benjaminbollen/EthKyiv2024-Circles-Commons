@@ -31,3 +31,9 @@ to represent the Group Circles of different communities.**
 - [A less-short introduction to Circles](/guide/01_short_intro.md)
 - [Getting Started](/guide/02_getting_started.md)
 - [Using Circles for Quadratic Voting/Funding](/guide/03_commons.md)
+
+## Connect with us
+
+- Discord: https://discord.gg/P9e3Vx39wH
+- Telegram: https://t.me/about_circles
+- Github: https://github.com/aboutcircles

@@ -17,7 +17,7 @@ Circles v2 is more developer friendly (we hope):
 - some historical bugs are addressed,
 - all Circles are also governed by a single ERC1155 contract (rather than each person's Circles as a separate ERC20 contract)
 - Group Circles are native to the protocol (ie. a group can trust existing Circles and they can be collaterlized into a new Circles identifier in ERC1155). Groups make it easier to accept the Circles of a (specific) Community in your dapp; or even to interact with different community currencies in a single dApp.
-- any Circles (of any person or any group) can also be lifted out 
+- any Circles (of any person or any group) can also be lifted out as ERC20 contracts
 
 **To hack on ideas for "Governing the Commons" we recommend to focus on the crux of your idea during the hackathon
 and treat Circles as a black box. Simply start by mocking Circles from a set of [ERC20 contracts, or an ERC1155 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token) to represent the Group Circles of different communities.** If you have time later in your project to integrate it with Circles v2, all the better.
