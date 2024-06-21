@@ -81,15 +81,19 @@ and SDK v0.0.44 is a stable alpha release.
 For contracts on Circles v2, there is an early preview SDK release which you can use
 to get started with interacting with Circles v2:
 
-https://www.npmjs.com/package/@circles-sdk/sdk (v0.0.45-preview-4 covers Circles v2; use v0.0.44 if you're using Circles v1 on mainnet)
+[v0.0.45-preview-29](https://www.npmjs.com/package/@circles-sdk/sdk/v/0.0.45-preview-29) covers Circles v2; use [v0.0.44](https://www.npmjs.com/package/@circles-sdk/sdk/v/0.0.44) if you want to cover Circles v1 on mainnet only.  
+Check the [SDK releases on GitHub](https://github.com/CirclesUBI/circles-sdk/releases) for the code and docs.
 
 An `avatar` is the main interaction point (it's effectively the address representing your user when using metamask) and it's registered in the Circles social graph and as such forms a vertex in the graph, and can forn trust edges with other avatars.
 
-The SDK only covers avatars as humans for now (not yet organizations or groups)
+The SDK is only tested with avatars as humans right now (organizations and groups are experimental).
 
-- The main avatar interactions are all defined here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/avatar.ts
-- All v1 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v1/v1Person.ts
-- All v2 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/feature/reimplement-v2/packages/sdk/src/v2/v2Person.ts
+- The main avatar interactions are all defined here: https://github.com/CirclesUBI/circles-sdk/blob/dev/packages/sdk/src/AvatarInterface.ts
+- All v1 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/dev/packages/sdk/src/v1/v1Person.ts
+- All v2 actions are implemented here: https://github.com/CirclesUBI/circles-sdk/blob/dev/packages/sdk/src/v2/v2Person.ts
+- The SDK can subscribe to events from the Circles RPC node. See [events.ts](https://github.com/CirclesUBI/circles-sdk/blob/dev/packages/data/src/events/events.ts) for a full list.
+
+_There is a [SvelteKit demo application](https://github.com/aboutcircles/5ecret-garden) that showcases the use of the SDK. It originates from a workshop at DappCon 24 and uses [v0.0.45-preview-29](https://www.npmjs.com/package/@circles-sdk/sdk/v/0.0.45-preview-29) of the SDK._
 
 # Circles v1 (mainnet)
 
